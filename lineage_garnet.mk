@@ -31,4 +31,20 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceProduct=$(PRODUCT_SYSTEM_NAME)
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+# RisingOS Flags
 TARGET_HAS_UDFPS := true
+EXTRA_UDFPS_ANIMATIONS := true
+PRODUCT_NO_CAMERA := true
+TARGET_ENABLE_BLUR := true
+
+# GMS
+WITH_GMS := true/false
+
+# Chipset/Maintainer properties
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    RisingChipset="Snapdragon 7s Gen 2" \
+    RisingMaintainer="Unknown"
+
+RISING_MAINTAINER := Unknown
+RISING_MAINTAINER="Unknown"
